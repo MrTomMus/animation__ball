@@ -42,20 +42,16 @@ let canvas = document.querySelector('.canvas');
 let ctx = canvas.getContext('2d');
 
 
-let ballOne = new Ball();
+let ball = new Ball();
 
 setInterval(() => {
     ctx.clearRect(0, 0, 500, 500);
 
-    ballOne.createBall();
-    ballOne.move();
-    ballOne.collision();
+    ball.createBall();
+    ball.move();
+    ball.collision();
 
     ctx.strokeRect();
 
 }, 30)
 
-
-
-
-console.log(ctx);
